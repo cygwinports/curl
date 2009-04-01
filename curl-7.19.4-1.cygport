@@ -1,0 +1,27 @@
+DESCRIPTION="Multi-protocol file transfer library and CLI tool"
+HOMEPAGE="http://curl.haxx.se/"
+SRC_URI="http://curl.haxx.se/download/${P}.tar.lzma"
+
+PKG_NAMES="${PN} lib${PN}4 lib${PN}-devel"
+curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.*"
+libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
+libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
+                        usr/share/man/man1/curl-config.* usr/share/man/man3/"
+
+DIFF_EXCLUDES="Makefile curlbuild.h"
+
+CYGCONF_ARGS="
+	--disable-hidden-symbols
+	--disable-ares
+	--disable-ldap
+	--disable-ldaps
+	--disable-sspi
+	--without-gnutls
+	--without-gssapi
+	--without-krb4
+	--without-nss
+	--without-spnego
+	--with-ssl --without-ca-bundle --with-ca-path=/usr/ssl/certs
+"
+
+DOCS="docs/[A-Z][A-Z]* docs/TheArtOfHttpScripting"
