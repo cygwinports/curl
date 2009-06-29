@@ -1,5 +1,5 @@
 category: Net Web
-requires: cygwin libgcc1 libidn11 libssh2_1 openssl zlib0
+requires: libgcc1 libidn11 libssh2_1 openssl zlib0
 external-source: curl
 sdesc: "Multi-protocol file transfer library (runtime)"
 ldesc: "curl is a command line tool and library for transferring files 
