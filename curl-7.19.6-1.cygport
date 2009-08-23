@@ -8,7 +8,7 @@ libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
 libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
                         usr/share/man/man1/curl-config.* usr/share/man/man3/"
 
-DIFF_EXCLUDES="Makefile curlbuild.h"
+DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
 
 CYGCONF_ARGS="
 	--disable-hidden-symbols

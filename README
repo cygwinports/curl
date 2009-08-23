@@ -8,24 +8,24 @@ authentication (Basic, Digest, NTLM, Negotiate...), file transfer
 resume, proxy tunneling and a busload of other useful tricks.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-60
   libgcc1-4.3.2-2
   libidn11-1.9-1
-  libssh2_1-1.0-1
+  libssh2_1-1.2-1
   openssl-0.9.8k-2
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
-  binutils-20080624-2
-  cygport-0.9.6-1
+  automake1.10-1.10.2-10
+  binutils-2.19.51-1
+  cygport-0.9.9-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
-  libtool-2.2.7a-1
+  libtool-2.2.7a-14
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -37,17 +37,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack curl-7.19.4-X-src.tar.bz2
+  unpack curl-7.19.6-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./curl-7.19.4-X.cygport all
+  cygport ./curl-7.19.6-X.cygport all
 
 This will create:
-  /usr/src/curl-7.19.4-X-src.tar.bz2
-  /usr/src/curl-7.19.4-X.tar.bz2
-  /usr/src/libcurl-devel-7.19.4-X.tar.bz2
-  /usr/src/libcurl4-7.19.4-X.tar.bz2
+  /usr/src/curl-7.19.6-X-src.tar.bz2
+  /usr/src/curl-7.19.6-X.tar.bz2
+  /usr/src/libcurl-devel-7.19.6-X.tar.bz2
+  /usr/src/libcurl4-7.19.6-X.tar.bz2
 
 -------------------------------------------
 
@@ -157,6 +157,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 7.19.6-1 -----
+Version bump with fix for CVE-2009-2417.
 
 ----- version 7.19.4-1 -----
 Initial release for Cygwin 1.7.
