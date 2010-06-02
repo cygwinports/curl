@@ -8,25 +8,24 @@ authentication (Basic, Digest, NTLM, Negotiate...), file transfer
 resume, proxy tunneling and a busload of other useful tricks.
 
 Runtime requirements:
-  cygwin-1.7.0-60
-  libgcc1-4.3.2-2
-  libidn11-1.9-1
-  libssh2_1-1.2-1
-  openssl-0.9.8k-2
+  cygwin-1.7.5-1
+  libgcc1-4.3.4-3
+  libidn11-1.16-1
+  libssh2_1-1.2.5-1
+  openssl-0.9.8n-1
   zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-10
-  automake1.10-1.10.2-10
-  binutils-2.19.51-1
-  cygport-0.9.9-1
-  gawk-3.1.6-2
-  gcc4-core-4.3.2-2
-  libtool-2.2.7a-14
+  autoconf2.5-2.65-1
+  automake1.10-1.10.3-1
+  binutils-2.20.51-2
+  cygport-0.9.84-1
+  gawk-3.1.7-1
+  gcc4-core-4.3.4-3
+  libtool-2.2.7a-15
   make-3.81-2
   pkg-config-0.23b-10
-  sed-4.1.5-2
 
 Canonical website:
   http://curl.haxx.se/
@@ -37,126 +36,24 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack curl-7.19.6-X-src.tar.bz2
+  unpack curl-7.20.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./curl-7.19.6-X.cygport all
+  cygport ./curl-7.20.1-X.cygport all
 
 This will create:
-  /usr/src/curl-7.19.6-X-src.tar.bz2
-  /usr/src/curl-7.19.6-X.tar.bz2
-  /usr/src/libcurl-devel-7.19.6-X.tar.bz2
-  /usr/src/libcurl4-7.19.6-X.tar.bz2
+  /usr/src/curl-7.20.1-X-src.tar.bz2
+  /usr/src/curl-7.20.1-X.tar.bz2
+  /usr/src/libcurl-devel-7.20.1-X.tar.bz2
+  /usr/src/libcurl4-7.20.1-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
-
-(curl)
-  /usr/bin/curl.exe
-  /usr/share/doc/curl/BINDINGS
-  /usr/share/doc/curl/BUGS
-  /usr/share/doc/curl/CONTRIBUTE
-  /usr/share/doc/curl/COPYING
-  /usr/share/doc/curl/ChangeLog
-  /usr/share/doc/curl/DISTRO-DILEMMA
-  /usr/share/doc/curl/FAQ
-  /usr/share/doc/curl/FEATURES
-  /usr/share/doc/curl/HISTORY
-  /usr/share/doc/curl/INSTALL
-  /usr/share/doc/curl/INSTALL.devcpp
-  /usr/share/doc/curl/INTERNALS
-  /usr/share/doc/curl/KNOWN_BUGS
-  /usr/share/doc/curl/LICENSE-MIXING
-  /usr/share/doc/curl/MANUAL
-  /usr/share/doc/curl/README
-  /usr/share/doc/curl/README.netware
-  /usr/share/doc/curl/README.win32
-  /usr/share/doc/curl/RESOURCES
-  /usr/share/doc/curl/SSLCERTS
-  /usr/share/doc/curl/THANKS
-  /usr/share/doc/curl/TODO
-  /usr/share/doc/curl/TheArtOfHttpScripting
-  /usr/share/doc/curl/VERSIONS
-  /usr/share/man/man1/curl.1.gz
-
-(libcurl4)
-  /usr/bin/cygcurl-4.dll
-
-(libcurl-devel)
-  /usr/bin/curl-config
-  /usr/include/curl/curl.h
-  /usr/include/curl/curlbuild.h
-  /usr/include/curl/curlrules.h
-  /usr/include/curl/curlver.h
-  /usr/include/curl/easy.h
-  /usr/include/curl/mprintf.h
-  /usr/include/curl/multi.h
-  /usr/include/curl/stdcheaders.h
-  /usr/include/curl/typecheck-gcc.h
-  /usr/include/curl/types.h
-  /usr/lib/libcurl.a
-  /usr/lib/libcurl.dll.a
-  /usr/lib/libcurl.la
-  /usr/lib/pkgconfig/libcurl.pc
-  /usr/share/man/man1/curl-config.1.gz
-  /usr/share/man/man3/curl_easy_cleanup.3.gz
-  /usr/share/man/man3/curl_easy_duphandle.3.gz
-  /usr/share/man/man3/curl_easy_escape.3.gz
-  /usr/share/man/man3/curl_easy_getinfo.3.gz
-  /usr/share/man/man3/curl_easy_init.3.gz
-  /usr/share/man/man3/curl_easy_pause.3.gz
-  /usr/share/man/man3/curl_easy_perform.3.gz
-  /usr/share/man/man3/curl_easy_recv.3.gz
-  /usr/share/man/man3/curl_easy_reset.3.gz
-  /usr/share/man/man3/curl_easy_send.3.gz
-  /usr/share/man/man3/curl_easy_setopt.3.gz
-  /usr/share/man/man3/curl_easy_strerror.3.gz
-  /usr/share/man/man3/curl_easy_unescape.3.gz
-  /usr/share/man/man3/curl_escape.3.gz
-  /usr/share/man/man3/curl_formadd.3.gz
-  /usr/share/man/man3/curl_formfree.3.gz
-  /usr/share/man/man3/curl_formget.3.gz
-  /usr/share/man/man3/curl_free.3.gz
-  /usr/share/man/man3/curl_getdate.3.gz
-  /usr/share/man/man3/curl_getenv.3.gz
-  /usr/share/man/man3/curl_global_cleanup.3.gz
-  /usr/share/man/man3/curl_global_init.3.gz
-  /usr/share/man/man3/curl_global_init_mem.3.gz
-  /usr/share/man/man3/curl_mprintf.3.gz
-  /usr/share/man/man3/curl_multi_add_handle.3.gz
-  /usr/share/man/man3/curl_multi_assign.3.gz
-  /usr/share/man/man3/curl_multi_cleanup.3.gz
-  /usr/share/man/man3/curl_multi_fdset.3.gz
-  /usr/share/man/man3/curl_multi_info_read.3.gz
-  /usr/share/man/man3/curl_multi_init.3.gz
-  /usr/share/man/man3/curl_multi_perform.3.gz
-  /usr/share/man/man3/curl_multi_remove_handle.3.gz
-  /usr/share/man/man3/curl_multi_setopt.3.gz
-  /usr/share/man/man3/curl_multi_socket.3.gz
-  /usr/share/man/man3/curl_multi_strerror.3.gz
-  /usr/share/man/man3/curl_multi_timeout.3.gz
-  /usr/share/man/man3/curl_share_cleanup.3.gz
-  /usr/share/man/man3/curl_share_init.3.gz
-  /usr/share/man/man3/curl_share_setopt.3.gz
-  /usr/share/man/man3/curl_share_strerror.3.gz
-  /usr/share/man/man3/curl_slist_append.3.gz
-  /usr/share/man/man3/curl_slist_free_all.3.gz
-  /usr/share/man/man3/curl_strequal.3.gz
-  /usr/share/man/man3/curl_unescape.3.gz
-  /usr/share/man/man3/curl_version.3.gz
-  /usr/share/man/man3/curl_version_info.3.gz
-  /usr/share/man/man3/libcurl-easy.3.gz
-  /usr/share/man/man3/libcurl-errors.3.gz
-  /usr/share/man/man3/libcurl-multi.3.gz
-  /usr/share/man/man3/libcurl-share.3.gz
-  /usr/share/man/man3/libcurl-tutorial.3.gz
-  /usr/share/man/man3/libcurl.3.gz
-
-------------------
-
 Port Notes:
+
+----- version 7.20.1-1 -----
+Version bump.
 
 ----- version 7.19.6-1 -----
 Version bump with fix for CVE-2009-2417.

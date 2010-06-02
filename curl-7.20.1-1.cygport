@@ -10,6 +10,7 @@ libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
 
 DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
 
+# gssapi: heimdal
 CYGCONF_ARGS="
 	--disable-hidden-symbols
 	--disable-ares
