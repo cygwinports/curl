@@ -1,5 +1,5 @@
 category: Net Web
-requires: libcurl4 libgcc1 zlib0
+requires: libcurl4 zlib0
 sdesc: "Multi-protocol file transfer command-line tool"
 ldesc: "curl is a command line tool and library for transferring files 
 with URL syntax, supporting FTP, FTPS, HTTP, HTTPS, SCP, SFTP, TFTP, 

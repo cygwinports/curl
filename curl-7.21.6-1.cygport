@@ -14,15 +14,11 @@ DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
 CYGCONF_ARGS="
 	--disable-hidden-symbols
 	--disable-ares
-	--disable-ldap
-	--disable-ldaps
 	--disable-sspi
-	--without-gnutls
 	--without-gssapi
 	--without-krb4
-	--without-nss
 	--without-spnego
-	--with-ssl --without-ca-bundle --with-ca-path=/usr/ssl/certs
+	--with-ca-bundle=/usr/ssl/certs/ca-bundle.crt
 "
 
 DOCS="docs/[A-Z][A-Z]* docs/TheArtOfHttpScripting"
