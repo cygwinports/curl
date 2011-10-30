@@ -1,5 +1,5 @@
 category: Net Web
-requires: libcurl4 libidn-devel librtmp-devel libssh2-devel openldap-devel openssl-devel zlib-devel
+requires: libcurl4 libkrb5-devel libidn-devel libssh2-devel openldap-devel openssl-devel zlib-devel
 external-source: curl
 sdesc: "Multi-protocol file transfer library (development)"
 ldesc: "curl is a command line tool and library for transferring files 
