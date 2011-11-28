@@ -10,13 +10,12 @@ libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
 
 DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
 
-# gssapi: requires Heimdal
 # librtmp: not in Fedora due to unchallenged DMCA action
 CYGCONF_ARGS="
 	--disable-hidden-symbols
 	--disable-ares
 	--disable-sspi
-	--without-gssapi
+	--with-gssapi
 	--without-krb4
 	--without-librtmp
 	--without-spnego
