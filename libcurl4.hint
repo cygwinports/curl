@@ -1,5 +1,5 @@
 category: Net Web
-requires: ca-certificates libgcc1 libidn11 libopenldap2_3_0 libopenssl098 libssh2_1 zlib0
+requires: ca-certificates libgcc1 libidn11 libopenldap2_3_0 libopenssl100 libssh2_1 zlib0
 external-source: curl
 sdesc: "Multi-protocol file transfer library (runtime)"
 ldesc: "curl is a command line tool and library for transferring files 
