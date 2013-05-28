@@ -15,6 +15,7 @@ SRC_URI="http://curl.haxx.se/download/${P}.tar.lzma"
 PKG_NAMES="${PN} lib${PN}4 lib${PN}-devel"
 curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.*"
 libcurl4_SUMMARY="Multi-protocol file transfer library (runtime)"
+libcurl4_REQUIRES="ca-certificates"
 libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
 libcurl_devel_SUMMARY="Multi-protocol file transfer library (development)"
 libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
