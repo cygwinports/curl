@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.29.0
+VERSION=7.30.0
 RELEASE=1
 CATEGORY="Net Web"
 SUMMARY="Multi-protocol file transfer tool"
@@ -10,9 +10,9 @@ PUT, FTP uploading, HTTP form based upload, proxies, cookies,
 user+password authentication (Basic, Digest, NTLM, Negotiate...), file
 transfer resume, proxy tunneling and a busload of other useful tricks."
 HOMEPAGE="http://curl.haxx.se/"
-SRC_URI="http://curl.haxx.se/download/${P}.tar.lzma"
+SRC_URI="http://curl.haxx.se/download/curl-${VERSION}.tar.lzma"
 
-PKG_NAMES="${PN} lib${PN}4 lib${PN}-devel"
+PKG_NAMES="${NAME} lib${NAME}4 lib${NAME}-devel"
 curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.*"
 libcurl4_SUMMARY="Multi-protocol file transfer library (runtime)"
 libcurl4_REQUIRES="ca-certificates"
