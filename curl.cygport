@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.33.0
+VERSION=7.34.0
 RELEASE=1
 CATEGORY="Net Web"
 SUMMARY="Multi-protocol file transfer tool"
@@ -12,7 +12,6 @@ transfer resume, proxy tunneling and a busload of other useful tricks."
 HOMEPAGE="http://curl.haxx.se/"
 SRC_URI="http://curl.haxx.se/download/curl-${VERSION}.tar.lzma"
 PATCH_URI="
-	7.33.0-Wimplicit-decls.patch
 	7.33.0-libdeps.patch
 "
 
@@ -25,7 +24,7 @@ libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
 libcurl_devel_CATEGORY="Libs"
 libcurl_devel_SUMMARY="Multi-protocol file transfer library (development)"
 libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
-                        usr/share/man/man1/curl-config.*"
+                        usr/share/aclocal/ usr/share/man/man1/curl-config.*"
 libcurl_doc_CATEGORY="Doc"
 libcurl_doc_SUMMARY="Multi-protocol file transfer library (API docs)"
 libcurl_doc_CONTENTS="usr/share/man/man3/"
@@ -37,7 +36,6 @@ DIFF_EXCLUDES+=" Makefile.in install-sh libtool.m4 lt*.* mkinstalldirs"
 # librtmp: not in Fedora due to unchallenged DMCA action
 CYGCONF_ARGS="
 	--enable-debug --enable-optimize
-	--disable-static
 	--disable-hidden-symbols
 	--disable-ares
 	--enable-ipv6
@@ -57,7 +55,7 @@ CYGCONF_ARGS="
 
 DOCS="docs/BINDINGS docs/BUGS docs/CONTRIBUTE docs/DISTRO-DILEMMA docs/FAQ
       docs/FEATURES docs/HISTORY docs/HTTP-COOKIES docs/INTERNALS docs/KNOWN_BUGS
-      docs/LICENSE-MIXING docs/MAIL-ETIQUETTE docs/MANUAL docs/RESOURCES
+      docs/LICENSE-MIXING docs/MAIL-ETIQUETTE docs/MANUAL docs/RESOURCES docs/SECURITY
       docs/SSLCERTS docs/THANKS docs/TheArtOfHttpScripting docs/TODO docs/VERSIONS"
 
 KEEP_LA_FILES="none"
