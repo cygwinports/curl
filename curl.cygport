@@ -1,6 +1,6 @@
 NAME="curl"
 VERSION=7.36.0
-RELEASE=1
+RELEASE=2
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
 DESCRIPTION="curl is a command line tool and library for transferring files
