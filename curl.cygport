@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.40.0
+VERSION=7.41.0
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -36,6 +36,7 @@ DIFF_EXCLUDES+=" Makefile.in install-sh libtool.m4 lt*.* mkinstalldirs"
 # librtmp: not in Fedora due to unchallenged DMCA action
 CYGCONF_ARGS="
 	--enable-debug --enable-optimize
+	--disable-static
 	--disable-hidden-symbols
 	--disable-ares
 	--enable-ipv6
@@ -46,7 +47,6 @@ CYGCONF_ARGS="
 	--with-libmetalink
 	--without-librtmp
 	--with-libssh2
-	--without-spnego
 	--with-ssl
 	--with-zlib
 	--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt
