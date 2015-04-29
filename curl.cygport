@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.42.0
+VERSION=7.42.1
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
