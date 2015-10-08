@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.43.0
+VERSION=7.45.0
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -31,7 +31,7 @@ libcurl_doc_CONTENTS="usr/share/man/man3/"
 
 DIFF_EXCLUDES="Makefile curlbuild.h curl_config.h"
 # uses private wrapper for initializing libtool
-DIFF_EXCLUDES+=" Makefile.in install-sh libtool.m4 lt*.* missing mkinstalldirs"
+DIFF_EXCLUDES+=" Makefile.in install-sh libtool.m4 lt*.* missing mkinstalldirs test-driver"
 
 # librtmp: not in Fedora due to unchallenged DMCA action
 CYGCONF_ARGS="
