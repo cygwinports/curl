@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.45.0
+VERSION=7.47.0
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -16,7 +16,7 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} lib${NAME}4 lib${NAME}-devel lib${NAME}-doc"
-curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.*"
+curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.* usr/share/zsh"
 libcurl4_CATEGORY="Libs"
 libcurl4_SUMMARY="Multi-protocol file transfer library (runtime)"
 libcurl4_REQUIRES="ca-certificates"
