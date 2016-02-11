@@ -1,6 +1,6 @@
 NAME="curl"
-VERSION=7.47.0
-RELEASE=2
+VERSION=7.47.1
+RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
 DESCRIPTION="curl is a command line tool and library for transferring files
@@ -46,8 +46,9 @@ CYGCONF_ARGS="
 	--with-libidn
 	--with-libmetalink
 	--without-librtmp
-	--with-nghttp2
+	--with-libpsl
 	--with-libssh2
+	--with-nghttp2
 	--with-ssl
 	--with-zlib
 	--with-ca-bundle=/etc/pki/tls/certs/ca-bundle.crt
