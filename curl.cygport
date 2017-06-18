@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.54.0
+VERSION=7.54.1
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -38,12 +38,12 @@ CYGCONF_ARGS="
 	--enable-debug --enable-optimize
 	--disable-static
 	--disable-hidden-symbols
-	--disable-ares
+	--enable-threaded-resolver
 	--enable-ipv6
 	--enable-ldap
 	--disable-sspi
 	--with-gssapi
-	--with-libidn
+	--with-libidn2
 	--with-libmetalink
 	--without-librtmp
 	--with-libpsl
