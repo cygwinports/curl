@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.59.0
+VERSION=7.64.1
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -16,15 +16,27 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} lib${NAME}4 lib${NAME}-devel lib${NAME}-doc"
-curl_CONTENTS="usr/bin/curl.exe usr/share/doc/ usr/share/man/man1/curl.* usr/share/zsh"
+curl_CONTENTS="
+	usr/bin/curl.exe
+	usr/share/doc/
+	usr/share/fish/completions/curl.fish
+	usr/share/man/man1/curl.*
+	usr/share/zsh/site-functions/_curl
+"
 libcurl4_CATEGORY="Libs"
 libcurl4_SUMMARY="Multi-protocol file transfer library (runtime)"
 libcurl4_REQUIRES="ca-certificates"
 libcurl4_CONTENTS="usr/bin/cygcurl-4.dll"
 libcurl_devel_CATEGORY="Libs"
 libcurl_devel_SUMMARY="Multi-protocol file transfer library (development)"
-libcurl_devel_CONTENTS="usr/bin/curl-config usr/include/ usr/lib/
-                        usr/share/aclocal/ usr/share/man/man1/curl-config.*"
+libcurl_devel_CONTENTS="
+	usr/bin/curl-config
+	usr/include/curl/
+	usr/lib/libcurl.dll.a
+	usr/lib/pkgconfig/libcurl.pc
+	usr/share/aclocal/libcurl.m4
+	usr/share/man/man1/curl-config.1*
+"
 libcurl_doc_CATEGORY="Doc"
 libcurl_doc_SUMMARY="Multi-protocol file transfer library (API docs)"
 libcurl_doc_CONTENTS="usr/share/man/man3/"
@@ -47,7 +59,7 @@ CYGCONF_ARGS="
 	--with-libmetalink
 	--without-librtmp
 	--with-libpsl
-	--with-libssh2
+	--with-libssh
 	--with-nghttp2
 	--with-ssl
 	--with-zlib
@@ -65,5 +77,3 @@ DOCS="docs/BINDINGS docs/BUGS docs/CONTRIBUTE docs/DISTRO-DILEMMA docs/FAQ
       docs/FEATURES docs/HISTORY docs/HTTP-COOKIES docs/INTERNALS docs/KNOWN_BUGS
       docs/LICENSE-MIXING docs/MAIL-ETIQUETTE docs/MANUAL docs/RESOURCES docs/SECURITY
       docs/SSLCERTS docs/THANKS docs/TheArtOfHttpScripting docs/TODO docs/VERSIONS"
-
-KEEP_LA_FILES="none"
