@@ -54,6 +54,7 @@ CYGCONF_ARGS="
 	--enable-ipv6
 	--enable-ldap
 	--disable-sspi
+	--with-brotli
 	--with-gssapi
 	--with-libidn2
 	--with-libmetalink
