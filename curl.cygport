@@ -1,5 +1,5 @@
 NAME="curl"
-VERSION=7.64.1
+VERSION=7.65.0
 RELEASE=1
 CATEGORY="Net"
 SUMMARY="Multi-protocol file transfer tool"
@@ -19,7 +19,7 @@ PKG_NAMES="${NAME} lib${NAME}4 lib${NAME}-devel lib${NAME}-doc"
 curl_CONTENTS="
 	usr/bin/curl.exe
 	usr/share/doc/
-	usr/share/fish/completions/curl.fish
+	usr/share/fish/vendor_completions.d/curl.fish
 	usr/share/man/man1/curl.*
 	usr/share/zsh/site-functions/_curl
 "
